@@ -7,10 +7,14 @@
 <body>
     <h1>Index</h1>
     <ul>
-        <l1><a href="index">Index</a></l1>
-        <l1><a href="home">Home</a></l1>
-        <l1><a href="pokemon">Pokemon</a></l1>
-        <li><a href="logout">Cerrar sesion</a></li>
+        <l1><a href="index">Index</a></li>
+        <l1><a href="home">Home</a></li>
+        <l1><a href="pokemon">Pokemon</a></li>
+        <li>
+            <form th:action="@{/logout}" method="post">
+                <button>Salir</button>
+            </form>
+        </li>
     </ul>
 </body>
 </html>

@@ -9,10 +9,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
 
     @Override 
-    public void addViewControllers(ViewControllerRegistry registry){
+    public void addViewControllers(@SuppressWarnings("null") ViewControllerRegistry registry){
         registry.addViewController("/").setViewName("index");
         registry.addViewController("/index").setViewName("index");
         registry.addViewController("/home").setViewName("home");
         registry.addViewController("/pokemon").setViewName("pokemon");
+        registry.addViewController("/login").setViewName("login");
     }
 }
